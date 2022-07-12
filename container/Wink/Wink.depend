@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1657632405 source:c:\users\daniel\desktop\development\music-player\container\wink\resources.rc
+
+1657641024 source:c:\users\daniel\desktop\development\music-player\container\wink\main.c
+	<stdio.h>
+	<stdlib.h>
+

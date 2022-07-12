@@ -2,7 +2,10 @@ from tkinter import *
 import sys, getpass, pygame , tkinter.font as _  , tkinter.ttk as ttk 
 from tkinter import filedialog 
 from mutagen.mp3 import MP3
+import ctypes
 
+myappid="dsffv"
+ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 username = getpass.getuser()
 paused = False
 pygame.mixer.init()
@@ -52,7 +55,7 @@ def music_duration(song):
 
 window = Tk()
 window.geometry("650x550")
-window.iconbitmap(sys.path[0] + "\\wink_music.ico")
+window.iconbitmap(sys.path[0] + "\\favicon.ico")
 window.title("wink")
 Helvetica = _.Font(family="Helvetica", size=10)
 
@@ -62,6 +65,7 @@ def src(name):
     return PhotoImage(file=relative_path)
 
 directory_list = []
+
 def LIST_FILES():
     files = filedialog.askopenfilenames(initialdir=f'c:\\users\\{username}\\music', title="Choose song(s)",
                                      filetypes=(("mp3", "*.mp3"),))
