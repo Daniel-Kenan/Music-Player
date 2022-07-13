@@ -10,6 +10,7 @@ myappid="Daniel.Kenan.Slinda"
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 username = getpass.getuser()
 window = Tk()
+window.resizable(False,False)
 window.geometry("650x550")
 favicon = sys.path[0] + "\\favicon.ico"
 window.iconbitmap(favicon)
