@@ -1,1 +1,1 @@
-python -m pip install -r requirements.txt  --no-warn-script-location.
+python -m pip install -r requirements.txt 
